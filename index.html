@@ -4,58 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TAM-BOLNA</title>
     <!-- <link rel="stylesheet" type="text/css"href="style.css" defer> -->
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            background-color: aqua;
-            height: 90px;
-        }
-
-        h1 {
-            margin: 0;
-            padding: 25px;
-            font-size: 200%;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-        }
-
-        #btnContainer {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin: 20px;
-            /* background-color: aquamarine; */
-
-
-        }
-
-        button {
-
-            height: 60px;
-            margin: 0 50px;
-            width: 60px;
-            font-size: 30px;
-        }
-    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>TAM-BOLNA</h1>
+        <img src="coin.png" href="tambola.html" id="coin" alt="">
+        <img src="coin-noTxt.png" href="tambola.html" id="coin-back" alt="">
+        <button id="playBtn">&#x23F5;</button>
+        <h1 id="title"> TAM-BOLNA</h1>
+
     </header>
-    <div id="btnContainer">
+    <div class="background">
+
+        <div class="rule-box">
+            <div class="box-lining">
+                <ul>
+                    <li>Tambola is a lottery-style board game which originated in Southern Italy.</li>
+                    <br>
+                    <li>Tam-bolna is a version of Tambola which acts as host of the game.</li>
+                    <br>
+                    <li>This unique feature will help you enojoy the game, without worrying to host the game, we got
+                        your back!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div id="board-container"></div>
+        </div>
+    </div>
+    <!-- <div id="btnContainer">
         <button id="playBtn">&#x23F5;</button>
         <button id="pauseBtn">&#x23F8;</button>
         <button id="stopBtn">&#x23F9; </button>
-
-    </div>
+    </div> -->
 </body>
 
 </html>
